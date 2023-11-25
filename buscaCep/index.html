@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>busca cep</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Busca cep</h1>
+    <label for="cep">Insira seu cep</label>
+    <input type="text"  name="cep" id="cep" autofocus required pattern="\d{5}-?\d{3}" placeholder="00000-000">
+
+    <input type="text" readonly name="logradouro">
+
+    <input type="text" readonly name="bairro">
+
+    <input type="text" readonly name="localidade">
+
+    <input type="text" readonly name="uf">
+
+    <button value="search" onclick='buscarCep()'> search</button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
